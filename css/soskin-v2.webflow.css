@@ -107,12 +107,12 @@ li {
 
 .style-guide-sidebar {
   z-index: 100;
-  width: 100%;
-  max-width: 240px;
-  min-height: 100vh;
   background-color: #fff;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  max-width: 240px;
+  min-height: 100vh;
   padding: 2em;
   display: flex;
   position: fixed;
@@ -133,8 +133,8 @@ li {
 }
 
 .section.headlines {
-  min-height: 200vh;
   flex-direction: column;
+  min-height: 200vh;
   overflow: visible;
 }
 
@@ -144,12 +144,12 @@ li {
 }
 
 .section.testimonials {
-  width: 100%;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
+  width: 100%;
   padding-left: 0;
   padding-right: 0;
   display: block;
@@ -289,10 +289,10 @@ li {
 
 .header {
   z-index: 100;
-  width: 100%;
-  height: 7em;
   background-color: var(--background-beige);
   align-items: center;
+  width: 100%;
+  height: 7em;
   padding-top: 1em;
   padding-bottom: 1em;
   display: flex;
@@ -412,10 +412,10 @@ li {
 
 .button-shadow {
   z-index: -1;
-  width: 100%;
-  height: 100%;
   background-color: var(--beige-shadow);
   border-radius: 4px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: .5em;
   left: .5em;
@@ -432,8 +432,8 @@ li {
 }
 
 .sticky.headlines {
-  width: 100%;
   flex-direction: column;
+  width: 100%;
   margin-left: 0;
   display: flex;
   top: 9vw;
@@ -449,9 +449,6 @@ li {
 }
 
 .laptop-body-16-9 {
-  width: 64vw;
-  max-height: 432px;
-  max-width: 768px;
   border: 3px solid var(--black);
   box-shadow: 17px 17px 0 0 var(--beige-shadow);
   background-image: url('../images/072222-Beauty-filler-lead-2000-9332bd26e9f94c33b845272cca260ba1.jpg');
@@ -461,6 +458,9 @@ li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 64vw;
+  max-width: 768px;
+  max-height: 432px;
   padding-bottom: 36vw;
   font-size: 14px;
   display: flex;
@@ -517,13 +517,13 @@ li {
 }
 
 .headlines-group-headline-container {
-  height: 11vw;
   background-color: #fff;
   border: .25vw dashed #000;
   border-radius: 1vw;
   flex: none;
   justify-content: center;
   align-items: center;
+  height: 11vw;
   margin-left: 1.3vw;
   padding-top: 2vw;
   padding-bottom: 2vw;
@@ -539,8 +539,8 @@ li {
 }
 
 .headlines-group-headline-grow {
-  width: 50vw;
   flex: none;
+  width: 50vw;
   overflow: hidden;
 }
 
@@ -585,8 +585,8 @@ li {
 }
 
 .integrations-header {
-  width: 100%;
   align-items: flex-start;
+  width: 100%;
   padding: 2em;
   display: flex;
 }
@@ -610,14 +610,12 @@ li {
 }
 
 .testimonials {
-  width: 200vw;
   justify-content: flex-start;
+  width: 200vw;
   display: flex;
 }
 
 .testimonial-block {
-  width: 100%;
-  max-width: 24.5em;
   border: 3px solid var(--black);
   box-shadow: 11px 11px 0 0 var(--secondary--50);
   background-color: #fff;
@@ -626,6 +624,8 @@ li {
   flex: none;
   justify-content: space-between;
   align-items: stretch;
+  width: 100%;
+  max-width: 24.5em;
   margin-left: 1em;
   margin-right: 1em;
   display: flex;
@@ -667,18 +667,18 @@ li {
 
 .hero-image-block {
   z-index: 1;
-  width: 120%;
   box-shadow: 34px 34px 0 0 var(--beige-shadow);
   border-radius: 4em;
+  width: 120%;
   padding-bottom: 120%;
   position: relative;
   overflow: hidden;
 }
 
 .download-bg-image-wrapper {
+  flex: none;
   width: 50vw;
   max-width: none;
-  flex: none;
   overflow: hidden;
 }
 
@@ -688,9 +688,9 @@ li {
 }
 
 .dowload-bg-image-container {
+  justify-content: flex-end;
   width: 50vw;
   height: 15vw;
-  justify-content: flex-end;
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
@@ -710,13 +710,13 @@ li {
 
 .download-container {
   z-index: 2;
-  width: 100%;
-  max-width: 24em;
   border-style: solid solid none;
   border-width: 3px;
   border-color: var(--black);
   background-color: var(--light);
   border-radius: 3em 3em 0 0;
+  width: 100%;
+  max-width: 24em;
   margin-left: auto;
   margin-right: auto;
   padding: 3em 2.5em;
@@ -726,9 +726,9 @@ li {
 
 .download-container-bg {
   z-index: -1;
-  width: 100%;
   background-color: var(--secondary--25);
   border-bottom-right-radius: 100%;
+  width: 100%;
   padding-bottom: 100%;
   position: absolute;
   top: 0;
@@ -767,11 +767,11 @@ li {
 }
 
 .form-input {
-  height: 3.5em;
   border: 2px solid var(--black);
   background-color: var(--light);
   color: var(--black);
   border-radius: 4px;
+  height: 3.5em;
   margin-bottom: 0;
   margin-right: 1em;
   padding: 1em;
@@ -789,19 +789,19 @@ li {
 }
 
 .mobile-menu-toggle {
+  cursor: pointer;
   width: 48px;
   height: 48px;
-  cursor: pointer;
   margin-left: auto;
   display: none;
   position: relative;
 }
 
 .mobile-menu-bar {
-  width: 32px;
-  height: 4px;
   background-color: #000;
   border-radius: 8px;
+  width: 32px;
+  height: 4px;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
@@ -827,10 +827,10 @@ li {
 }
 
 .nav-item-indicator-bullet {
-  width: 6px;
-  height: 6px;
   background-color: #000;
   border-radius: 8px;
+  width: 6px;
+  height: 6px;
   transform: translate(0, 8px);
 }
 
@@ -891,9 +891,9 @@ li {
 }
 
 .button-arrow {
-  width: 20px;
   justify-content: center;
   align-items: center;
+  width: 20px;
   margin-left: 8px;
   display: flex;
 }
@@ -911,12 +911,12 @@ li {
 }
 
 .logo-svg {
-  width: 120px;
   background-color: var(--light);
   background-image: radial-gradient(circle farthest-corner at 0% 50%, var(--secondary--default), var(--light) 22%);
   color: var(--black);
   justify-content: center;
   align-items: center;
+  width: 120px;
   display: flex;
 }
 
@@ -932,8 +932,8 @@ li {
 
 .feather {
   z-index: 2;
-  width: 50%;
   opacity: .8;
+  width: 50%;
   margin: auto;
   position: absolute;
   top: 33%;
@@ -957,14 +957,14 @@ li {
 }
 
 .headlines-group-small {
-  height: 11vw;
-  min-width: 9vw;
   background-color: #b9f3ff;
   border: .25vw solid #000;
   border-radius: 1vw;
   flex: none;
   justify-content: flex-start;
   align-items: flex-start;
+  min-width: 9vw;
+  height: 11vw;
   margin-left: 1.1vw;
   padding: 1vw;
   font-size: 1em;
@@ -975,8 +975,8 @@ li {
 
 .headlines-group-small.bigger {
   width: 12vw;
-  height: 15vw;
   min-width: 12vw;
+  height: 15vw;
   font-size: 1.2em;
 }
 
@@ -986,12 +986,12 @@ li {
 }
 
 .dot-wrapper {
-  width: 2em;
-  height: 1.5em;
   background-color: var(--black);
   border-radius: 50px;
   justify-content: center;
   align-items: center;
+  width: 2em;
+  height: 1.5em;
   padding-left: 5px;
   padding-right: 5px;
   display: flex;
@@ -1019,8 +1019,8 @@ li {
 
 .sticky-image-column {
   z-index: 2;
-  width: 66%;
   background-color: var(--beige-sd-light);
+  width: 66%;
   padding-left: 5%;
   position: absolute;
   top: 0%;
@@ -1034,8 +1034,8 @@ li {
 }
 
 .sticky-image-overflow {
-  width: 100%;
   text-align: center;
+  width: 100%;
   padding-bottom: 20px;
   overflow: hidden;
 }
@@ -1065,11 +1065,11 @@ li {
 }
 
 .content-section {
-  min-height: 100vh;
   background-color: #f2f4ff;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  min-height: 100vh;
   padding: 100px 3%;
   display: flex;
 }
@@ -1108,10 +1108,10 @@ li {
 }
 
 .discount-container {
-  width: 120px;
   background-color: var(--black);
   color: var(--light);
   border-radius: 12px;
+  width: 120px;
   margin-left: auto;
   margin-right: auto;
   padding: 8px 18px;
@@ -1235,10 +1235,10 @@ li {
 }
 
 .pricing-menu {
-  width: 13em;
   background-color: #fff;
   border: 2px solid #000;
   border-radius: 6px;
+  width: 13em;
   margin-top: 1em;
   margin-left: auto;
   margin-right: auto;
@@ -1247,11 +1247,11 @@ li {
 }
 
 .price-tab {
-  width: 6em;
   color: var(--black-2);
   text-align: center;
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid rgba(0, 0, 0, 0);
+  width: 6em;
   margin: -2px;
   padding: .5em 0;
   font-size: 1.1em;
@@ -1271,9 +1271,9 @@ li {
 
 .price-tab.line {
   width: 2px;
-  height: 100%;
-  max-width: 2px;
   min-width: 2px;
+  max-width: 2px;
+  height: 100%;
   padding: 0;
   display: inline;
   position: relative;
@@ -1301,10 +1301,10 @@ li {
 }
 
 .flex-stack-center {
-  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 5%;
@@ -1315,11 +1315,11 @@ li {
 
 .input {
   z-index: 2;
-  height: 48px;
   background-color: var(--light);
   color: var(--black);
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 6px;
+  height: 48px;
   margin-bottom: 0;
   padding-top: 10px;
   padding-left: 20px;
@@ -1333,20 +1333,15 @@ li {
   border-color: var(--black-2);
 }
 
-.input::-ms-input-placeholder {
-  color: rgba(19, 22, 23, .5);
-  font-weight: 300;
-}
-
 .input::placeholder {
   color: rgba(19, 22, 23, .5);
   font-weight: 300;
 }
 
 .svg {
-  width: 16px;
   justify-content: center;
   align-items: center;
+  width: 16px;
   margin-right: 4px;
   display: flex;
 }
@@ -1359,10 +1354,10 @@ li {
 }
 
 .forgot-password {
-  width: 100%;
-  height: 25px;
   color: var(--black-2);
   text-align: right;
+  width: 100%;
+  height: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: 400;
@@ -1405,11 +1400,11 @@ li {
 
 .form-wrapper {
   z-index: 50;
-  width: 100%;
-  max-width: 380px;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
+  width: 100%;
+  max-width: 380px;
   margin-bottom: 5em;
   display: flex;
   position: relative;
@@ -1421,9 +1416,9 @@ li {
 }
 
 .text-field-wrapper {
-  width: 100%;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
   margin-bottom: 12px;
   display: flex;
   position: relative;
@@ -1445,16 +1440,16 @@ li {
 }
 
 .flex-row-outer {
-  width: 100%;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   display: flex;
 }
 
 .input-border {
-  width: 100%;
   background-color: var(--black);
   border-radius: 6px;
+  width: 100%;
   padding: 2px;
   position: relative;
   overflow: hidden;
@@ -1502,10 +1497,10 @@ li {
 
 .input-shine {
   z-index: 1;
-  width: 200px;
-  height: 200px;
   background-color: var(--black);
   background-image: radial-gradient(circle farthest-corner at 50% 50%, var(--light) 5%, rgba(19, 22, 23, .5));
+  width: 200px;
+  height: 200px;
   padding-top: 50%;
   position: absolute;
   top: -80px;
@@ -1525,8 +1520,8 @@ li {
 }
 
 .legal-link {
-  width: 14em;
   justify-content: space-between;
+  width: 14em;
   display: flex;
 }
 
@@ -1554,8 +1549,8 @@ li {
 }
 
 .html-embed {
-  width: 40vw;
   border-radius: 10px;
+  width: 40vw;
   margin-top: 23px;
   overflow: hidden;
   box-shadow: 0 3px 10px rgba(255, 255, 255, .4), 0 10px 20px rgba(93, 41, 211, .1), 0 40px 50px rgba(55, 66, 82, .5);
@@ -1567,9 +1562,9 @@ li {
 
 .ms-iframe {
   z-index: 2147483647;
-  height: 70px;
   justify-content: flex-end;
   align-items: flex-end;
+  height: 70px;
   display: flex;
   position: fixed;
   top: auto;
@@ -1579,21 +1574,21 @@ li {
 }
 
 .ms-iframe-embed {
-  width: 180px;
-  height: 70px;
   justify-content: flex-end;
   align-items: flex-end;
+  width: 180px;
+  height: 70px;
   display: flex;
   position: relative;
   overflow: visible;
 }
 
 .ms-iframe-footer-embed {
-  width: 100%;
-  height: 350px;
   background-color: #fff;
   justify-content: flex-end;
   align-items: flex-end;
+  width: 100%;
+  height: 350px;
   margin-bottom: 0;
   display: block;
   overflow: hidden;
@@ -1609,9 +1604,9 @@ li {
 }
 
 .extra-plans {
-  max-width: 900px;
   justify-content: space-between;
   align-items: flex-start;
+  max-width: 900px;
   margin-bottom: 80px;
   margin-left: auto;
   margin-right: auto;
@@ -1691,10 +1686,10 @@ li {
 }
 
 .f-r-see-more {
-  max-width: 300px;
   color: #16192c;
   justify-content: center;
   align-items: center;
+  max-width: 300px;
   margin-left: auto;
   margin-right: auto;
   text-decoration: none;
@@ -1707,9 +1702,9 @@ li {
 }
 
 .lottie {
+  flex: none;
   width: 20px;
   height: 20px;
-  flex: none;
   margin-top: 2px;
   margin-right: 15px;
 }
@@ -1785,10 +1780,10 @@ li {
 }
 
 .social-btn {
-  width: 100%;
   color: #000;
   border: 1px solid #dcdce5;
   border-radius: 6px;
+  width: 100%;
   margin-bottom: 10px;
   padding: 12px 40px 12px 15px;
   font-size: 15px;
@@ -1806,10 +1801,6 @@ li {
 
 .social-btn:focus {
   border: 1px solid #000;
-}
-
-.social-btn::-ms-input-placeholder {
-  color: #6e6e6e;
 }
 
 .social-btn::placeholder {
@@ -1840,11 +1831,11 @@ li {
 }
 
 .form-divider {
-  width: 100%;
   color: rgba(0, 0, 0, .8);
   letter-spacing: 2px;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   margin-top: 15px;
   margin-bottom: 15px;
   font-size: 12px;
@@ -1852,28 +1843,28 @@ li {
 }
 
 .form-div-line {
+  background-color: #141617;
   width: 40%;
   height: 2px;
-  background-color: #141617;
 }
 
 .hidden-embed {
   z-index: -1;
+  opacity: 0;
   height: 0;
   max-height: 0;
-  opacity: 0;
   position: fixed;
 }
 
 .ms-iframe-footer-embed-2 {
-  width: 100%;
-  height: 350px;
   background-color: #d1e7fb;
   background-image: url('../images/noise.png');
   background-position: 0 0;
   background-size: 200px;
   justify-content: flex-end;
   align-items: flex-end;
+  width: 100%;
+  height: 350px;
   margin-bottom: 0;
   display: block;
   overflow: hidden;
@@ -1900,13 +1891,13 @@ li {
 }
 
 .lottie-animation {
-  width: 64vw;
-  max-height: 432px;
-  max-width: 768px;
   box-shadow: 24px 0 0 9px var(--beige-shadow);
   border: 3px solid #000;
   justify-content: center;
   align-items: center;
+  width: 64vw;
+  max-width: 768px;
+  max-height: 432px;
   padding-bottom: 36vw;
   font-size: 14px;
   display: flex;
@@ -1921,11 +1912,11 @@ li {
 
 .image-2 {
   width: auto;
-  height: auto;
-  max-height: 50px;
-  max-width: none;
-  min-height: auto;
   min-width: auto;
+  max-width: none;
+  height: auto;
+  min-height: auto;
+  max-height: 50px;
 }
 
 .image-3 {
@@ -1946,8 +1937,8 @@ li {
 }
 
 .contact-form {
-  max-width: 700px;
   align-items: flex-start;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
@@ -1987,7 +1978,6 @@ li {
 }
 
 .text-field-cf9 {
-  width: 47%;
   text-align: left;
   background-color: #f4f6fc;
   border-color: rgba(0, 0, 0, 0);
@@ -1996,6 +1986,7 @@ li {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-radius: 4px;
+  width: 47%;
   margin-top: 10px;
   font-size: 16px;
 }
@@ -2013,18 +2004,18 @@ li {
 }
 
 .form-subwrapper-cf9 {
-  width: 100%;
   flex-flow: wrap;
   justify-content: center;
+  width: 100%;
   display: flex;
 }
 
 .contact-form-wrapper {
-  width: 90%;
-  height: auto;
-  max-width: 1400px;
   border-radius: 8px;
   align-items: center;
+  width: 90%;
+  max-width: 1400px;
+  height: auto;
   margin: 20px auto;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -2064,8 +2055,6 @@ li {
 
 .whatsapp-container {
   z-index: 30;
-  width: 100px;
-  height: 100px;
   text-align: center;
   cursor: pointer;
   background-color: #000;
@@ -2073,6 +2062,8 @@ li {
   border-radius: 100%;
   justify-content: center;
   align-items: center;
+  width: 100px;
+  height: 100px;
   transition: all .3s cubic-bezier(.45, .182, .111, .989);
   display: flex;
   position: relative;
@@ -2088,10 +2079,10 @@ li {
 }
 
 .live-icon {
-  width: 15px;
-  height: 15px;
   background-color: #00b94a;
   border-radius: 100%;
+  width: 15px;
+  height: 15px;
   position: absolute;
   top: 5px;
   bottom: auto;
@@ -2174,9 +2165,9 @@ li {
   }
 
   .testimonial-block {
-    max-width: 24.5em;
     flex-wrap: nowrap;
     flex: none;
+    max-width: 24.5em;
   }
 
   .lottie-animation {
@@ -2230,12 +2221,12 @@ li {
 
   .navigation-mobile {
     z-index: 45;
-    width: 100%;
-    height: 100vh;
     background-color: #f5f6f7;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100vh;
     padding: 5em 2.5em 2.5em;
     display: none;
     position: fixed;
@@ -2594,8 +2585,8 @@ li {
   }
 
   .headlines-group-headline-container {
-    height: 20vw;
     align-items: center;
+    height: 20vw;
   }
 
   .headline-group-heading {
@@ -2620,8 +2611,8 @@ li {
   }
 
   .hero-image-block {
-    width: 60vw;
     box-shadow: 23px 23px 0 0 var(--secondary--50);
+    width: 60vw;
   }
 
   .dowload-bg-image-container.left, .dowload-bg-image-container.right {
@@ -2738,8 +2729,8 @@ li {
   }
 
   .contact-form-wrapper {
-    width: 100%;
     border-radius: 0;
+    width: 100%;
   }
 
   .whatsapp-container {
