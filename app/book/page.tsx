@@ -121,7 +121,7 @@ export default function BookPage() {
               className="bg-white rounded-2xl p-8 shadow-lg border border-[#ccab82]/20 text-center relative z-30"
             >
               <h3 className="text-2xl font-medium text-[#5C4033] mb-4">Thank you!</h3>
-              <p className="text-gray-700 mb-6">Your message has been sent successfully. We'll get back to you soon.</p>
+              <p className="text-gray-700 mb-6">Your message has been sent successfully. We&apos;ll get back to you soon.</p>
               <button
                 onClick={() => setIsSubmitted(false)}
                 className="bg-[#5C4033] text-white px-6 py-2 rounded-lg hover:bg-[#5C4033]/90 transition-colors font-medium"

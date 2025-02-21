@@ -1,7 +1,6 @@
 'use client';
 
-import { motion, useAnimationControls } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 interface Review {
   text: string;
