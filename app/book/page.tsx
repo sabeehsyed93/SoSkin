@@ -21,12 +21,12 @@ const ContactOption = ({
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay }}
-      className="flex items-center gap-6 bg-white rounded-2xl p-6 shadow-lg border border-[#ccab82]/20 relative z-30"
+      className="flex items-center gap-4 md:gap-6 bg-white rounded-2xl p-4 md:p-6 shadow-lg border border-[#ccab82]/20 relative z-30 overflow-hidden"
     >
-      <span className="text-4xl flex-shrink-0">{icon}</span>
+      <span className="text-3xl md:text-4xl flex-shrink-0">{icon}</span>
       <Link 
         href={href}
-        className="text-xl md:text-2xl text-[#5C4033] hover:text-[#ccab82] transition-colors"
+        className="text-base md:text-xl lg:text-2xl text-[#5C4033] hover:text-[#ccab82] transition-colors break-all md:break-normal"
       >
         {text}
       </Link>

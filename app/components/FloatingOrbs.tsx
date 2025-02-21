@@ -5,29 +5,47 @@ import { useEffect, useState } from 'react';
 
 const FloatingOrbs = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isMobile, setIsMobile] = useState(false);
+  const [autoAnimate, setAutoAnimate] = useState(true);
+  const [time, setTime] = useState(0);
+
+  // Animation loop for mobile
+  useEffect(() => {
+    if (autoAnimate) {
+      const interval = setInterval(() => {
+        setTime(prev => prev + 1);
+      }, 50);
+      return () => clearInterval(interval);
+    }
+  }, [autoAnimate]);
 
   useEffect(() => {
-    const handleMouseMove = (event: MouseEvent) => {
-      // Calculate position as percentage of viewport
-      const x = (event.clientX / window.innerWidth) * 100;
-      const y = (event.clientY / window.innerHeight) * 100;
-      setMousePosition({ x, y });
+    // Check if device is mobile
+    const checkMobile = () => {
+      setIsMobile(window.matchMedia('(max-width: 768px)').matches);
     };
 
-    const handleResize = () => {
-      // Update position on resize to maintain relative position
-      const x = (mousePosition.x * window.innerWidth) / 100;
-      const y = (mousePosition.y * window.innerHeight) / 100;
-      setMousePosition({ x, y });
-    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
 
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('resize', handleResize);
-    };
-  }, [mousePosition.x, mousePosition.y]);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  useEffect(() => {
+    if (!isMobile) {
+      const handleMouseMove = (event: MouseEvent) => {
+        setAutoAnimate(false);
+        const x = (event.clientX / window.innerWidth) * 100;
+        const y = (event.clientY / window.innerHeight) * 100;
+        setMousePosition({ x, y });
+      };
+
+      window.addEventListener('mousemove', handleMouseMove);
+      return () => window.removeEventListener('mousemove', handleMouseMove);
+    } else {
+      setAutoAnimate(true);
+    }
+  }, [isMobile]);
 
   const orbs = [
     {
@@ -53,9 +71,17 @@ const FloatingOrbs = () => {
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none" style={{ minHeight: '100vh' }}>
       {orbs.map((orb, index) => {
-        // Calculate position relative to viewport center
-        const x = ((mousePosition.x - 50) * orb.speed * 20);
-        const y = ((mousePosition.y - 50) * orb.speed * 20);
+        let x, y;
+        if (autoAnimate) {
+          // Create a floating animation pattern
+          const t = time * 0.05;
+          x = Math.sin(t * orb.speed + index * Math.PI * 2/3) * 100;
+          y = Math.cos(t * orb.speed + index * Math.PI * 2/3) * 50;
+        } else {
+          // Mouse-based movement
+          x = ((mousePosition.x - 50) * orb.speed * 20);
+          y = ((mousePosition.y - 50) * orb.speed * 20);
+        }
 
         return (
           <motion.div
@@ -73,11 +99,17 @@ const FloatingOrbs = () => {
               x: x - (parseInt(orb.size) / 2),
               y: y - (parseInt(orb.size) / 2),
             }}
-            transition={{
-              type: "spring",
-              stiffness: 50,
-              damping: 30,
-              mass: 0.8,
+            animate={{
+              x: x - (parseInt(orb.size) / 2),
+              y: y - (parseInt(orb.size) / 2),
+              transition: {
+                type: autoAnimate ? "tween" : "spring",
+                duration: autoAnimate ? 0.5 : undefined,
+                ease: autoAnimate ? "linear" : undefined,
+                stiffness: autoAnimate ? undefined : 50,
+                damping: autoAnimate ? undefined : 30,
+                mass: autoAnimate ? undefined : 0.8,
+              }
             }}
           />
         );
