@@ -98,10 +98,6 @@ const FloatingOrbs = () => {
             animate={{
               x: x - (parseInt(orb.size) / 2),
               y: y - (parseInt(orb.size) / 2),
-            }}
-            animate={{
-              x: x - (parseInt(orb.size) / 2),
-              y: y - (parseInt(orb.size) / 2),
               transition: {
                 type: autoAnimate ? "tween" : "spring",
                 duration: autoAnimate ? 0.5 : undefined,
